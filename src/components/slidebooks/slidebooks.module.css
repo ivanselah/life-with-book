@@ -1,0 +1,86 @@
+@value subTitle from "../../common/colors.css";
+
+.slideBooks {
+  height: 700px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 75px;
+  font-size: 55px;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 23px;
+  font-weight: 700;
+  color: subTitle;
+}
+
+.slideBox {
+  height: 100%;
+  margin-top: 0;
+}
+
+.slide1 {
+  transform: translateY(-15%);
+  height: 500px;
+  background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide01.a7cc998bd9e966d0d94956bef997e0c8.png")
+    0/3000px repeat-x;
+  animation: move1 100s linear infinite;
+}
+
+@keyframes move1 {
+  0% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide01.a7cc998bd9e966d0d94956bef997e0c8.png")
+      0/3000px repeat-x;
+  }
+  100% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide01.a7cc998bd9e966d0d94956bef997e0c8.png")
+      3000px/3000px repeat-x;
+  }
+}
+
+.slide2 {
+  transform: translateY(-73%);
+  height: 500px;
+  background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide02.49dff390b1caebf4be084582e573d26f.png")
+    0/3000px repeat-x;
+  animation: move2 100s linear infinite;
+}
+
+@keyframes move2 {
+  0% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide02.49dff390b1caebf4be084582e573d26f.png")
+      0px/3000px repeat-x;
+  }
+  100% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide02.49dff390b1caebf4be084582e573d26f.png") -3000px/3000px
+      repeat-x;
+  }
+}
+
+.slide3 {
+  transform: translateY(-131%);
+  height: 500px;
+  background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide03.2246c95c20916dc665da8a84af1cd2ad.png")
+    0/3000px repeat-x;
+  animation: move3 100s linear infinite;
+}
+
+@keyframes move3 {
+  0% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide03.2246c95c20916dc665da8a84af1cd2ad.png")
+      0/3000px repeat-x;
+  }
+  100% {
+    background: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slide03.2246c95c20916dc665da8a84af1cd2ad.png")
+      3000px/3000px repeat-x;
+  }
+}

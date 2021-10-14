@@ -1,0 +1,90 @@
+@value mainColor, lightGray from "../../common/colors.css";
+
+.header {
+  height: 550px;
+  position: relative;
+  background-color: mainColor;
+}
+
+.inputBox {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 700px;
+  transition: width 300ms ease-in-out;
+}
+
+.inputBoxScroll {
+  position: fixed;
+  top: 1%;
+  width: 400px;
+  z-index: 101;
+  box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+}
+
+.inputBoxScroll input {
+  width: 85%;
+  height: 50px;
+}
+
+.inputBoxScroll label {
+  transform: translate(125px, 13px);
+  font-size: 1rem;
+}
+
+.inputBoxScroll button {
+  width: 40px;
+  height: 40px;
+}
+
+.inputBoxScroll .search {
+  width: 15%;
+}
+
+.input {
+  width: 88%;
+  height: 70px;
+  border: 0;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  text-align: center;
+  font-size: 1rem;
+}
+.input:focus {
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  transform: translate(200px, 13px);
+  font-size: 2rem;
+}
+
+.search {
+  width: 12%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button {
+  border: 0;
+  width: 50px;
+  height: 50px;
+  background-color: mainColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightGray;
+}
