@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./popbooks.module.css";
 import useScrollFadIn from "../useScrollFadeIn";
 
-const PopBooks = () => {
+const PopBooks = ({ BBooks }) => {
   const animatedItem = useScrollFadIn();
+
+  console.log(BBooks);
 
   return (
     <section className={styles.popBooks}>
