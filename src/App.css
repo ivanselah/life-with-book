@@ -4,3 +4,8 @@
 * {
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
 }
+
+ul,
+ol {
+  list-style-type: none;
+}

@@ -4,6 +4,7 @@ import Header from "./components/header/header";
 import Navbar from "./components/navbar/navbar";
 import PopBooks from "./components/popbooks/popbooks";
 import SlideBooks from "./components/slidebooks/slidebooks";
+import IntroOfBooks from "./components/IntroOfBooks/introOfBooks";
 
 function App({ bestBooks }) {
   const [BBooks, setBBooks] = useState();
@@ -29,6 +30,7 @@ function App({ bestBooks }) {
       <Header />
       <SlideBooks />
       <PopBooks BBooks={BBooks} loading={loading} />
+      <IntroOfBooks />
     </main>
   );
 }
