@@ -28,12 +28,13 @@ function Navbar() {
   }, []);
 
   return (
-    <section
+    <nav
       ref={navRef}
       className={
         navScroll ? `${styles.navbar} ${styles.scrollOK}` : `${styles.navbar}`
       }
     >
+      <h1 className={styles.srOnly}>네비게이션 바</h1>
       <div className={styles.title}>
         <div>
           <IconButton
@@ -50,7 +51,7 @@ function Navbar() {
                   : `${styles.name}`
               }
             >
-              도서관 구석구석
+              도서 구석구석
             </span>
           </IconButton>
         </div>
@@ -67,7 +68,7 @@ function Navbar() {
         </Button>
         <img className={styles.logo} src={stykor_logo} alt="logo" />
       </div>
-    </section>
+    </nav>
   );
 }
 

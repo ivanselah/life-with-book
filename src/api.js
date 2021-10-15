@@ -13,10 +13,11 @@ class BestBooks {
           KEY: this.key,
           Type: "json",
           pIndex: 1,
-          pSize: 30,
+          pSize: 40,
         },
       }
     );
+    console.log(response);
     return response.data?.Poplitloanbook[1].row;
   };
 }

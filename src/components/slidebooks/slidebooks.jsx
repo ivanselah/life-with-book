@@ -15,18 +15,19 @@ const SlideBooks = () => {
   });
   return (
     <section className={styles.slideBooks}>
+      <h1 className={styles.srOnly}>베스트셀러 이미지 슬라이드</h1>
       <animated.div style={props} className={styles.title}>
         <p>
           {`당신을 기다리는`}
           <br />
-          도서관 대출 도서
+          베스트셀러 도서
         </p>
         <span className={styles.subtitle}>
-          {`도서관과 함께라면`}
+          {`책과 함께라면`}
           <br />좀 더 멋진 일상을 만들 수 있을 거에요
         </span>
       </animated.div>
-      <div className={styles.slideBox}>
+      <div className={styles.slideBox} aria-label="베스트셀러 슬라이드">
         <div className={styles.slide1}></div>
         <div className={styles.slide2}></div>
         <div className={styles.slide3}></div>

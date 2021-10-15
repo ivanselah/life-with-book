@@ -7,12 +7,16 @@ import SlideBooks from "./components/slidebooks/slidebooks";
 
 function App({ bestBooks }) {
   const [BBooks, setBBooks] = useState();
+  const [loading, setLoading] = useState(true);
 
   const startBestBooks = async () => {
     try {
       const data = await bestBooks.getBestBooks();
       setBBooks(data);
-    } catch {}
+    } catch {
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -20,12 +24,12 @@ function App({ bestBooks }) {
   }, []);
 
   return (
-    <div className="App">
+    <main className="App">
       <Navbar />
       <Header />
       <SlideBooks />
-      <PopBooks BBooks={BBooks} />
-    </div>
+      <PopBooks BBooks={BBooks} loading={loading} />
+    </main>
   );
 }
 

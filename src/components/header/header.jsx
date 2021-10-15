@@ -40,7 +40,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section ref={headerRef} className={styles.header}>
+    <header ref={headerRef} className={styles.header}>
       <form
         className={
           navScroll
@@ -66,7 +66,7 @@ const Header = () => {
           </button>
         </div>
       </form>
-    </section>
+    </header>
   );
 };
 

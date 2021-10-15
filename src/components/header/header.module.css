@@ -39,6 +39,7 @@
 .inputBoxScroll button {
   width: 40px;
   height: 40px;
+  font-size: 1.8rem;
 }
 
 .inputBoxScroll .search {
@@ -83,6 +84,7 @@
   background-color: mainColor;
   border-radius: 50%;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .button:hover {
